@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$pass = sha1($password);
 		$insert = "INSERT INTO users (username,phone,email,password,sex) VALUES ('$username','$phone','$email','$pass','$sex') ";
 		mysqli_query($con,$insert);
-		header('location:index.php');
+		header('location:index.html');
 		exit();
 	} ;
 }
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						</div>
 				<?php };?>
 				<input type="submit" value="إنشاء حساب" class="submit">
-				<p>لديك حساب ؟ <a href="index.php">تسجيل الدخول</a></p>
+				<p>لديك حساب ؟ <a href="index.html">تسجيل الدخول</a></p>
 			</form>
 			<div class="image">
 				<img src="images/login.png" class="login-img">
