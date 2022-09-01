@@ -1,0 +1,134 @@
+:root {
+	--main-color: #1cc0a9;
+}
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Cairo', sans-serif
+}
+body {
+	direction: rtl;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	width: 135px;
+    margin: 20px 0 0;
+}
+.compte {
+	margin-top: 100px;
+}
+.compte .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.compte .container .image {
+	max-width: 500px;
+}
+.compte .container .login-img {
+	width: 100%;
+}
+@media (max-width:992px) {
+	.compte .container .image {
+		display: none;
+	}
+}
+.compte .container .form {
+	display: flex;
+	flex-direction: column;
+    border-radius: 10px;
+    padding: 50px 20px 20px;
+	position: relative;
+	width: 400px;
+}
+@media (max-width:992px) {
+	.compte .container .form {
+		margin:auto;
+	}
+}
+.compte .container .form .header-img {
+	position: absolute;
+    width: 80px;
+    top: -40px;
+    transform: translateX(-50%);
+    left: 50%;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.compte .container .form .header-img-signup {
+	border-radius: 0;
+	width: 70px;
+}
+.compte .container .form h4 {
+	text-align: center;
+    margin: 10px 0 20px;
+    font-weight: bold;
+    color: var(--main-color);
+	font-family: 'Cairo', sans-serif;
+}
+.compte .container .form .input {
+	position: relative;
+}
+.compte .container .form .input input {
+	margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 30px;
+    color: var(--main-color);
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+}
+@media (min-width:767px) {
+	.compte .container .form-signup .input input {
+		padding: 4px 30px;
+	}
+}
+.compte .container .form .input input:focus {
+	border-bottom: 2px solid var(--main-color);
+}
+.compte .container .form .input .input-icon {
+	position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: #777;
+}
+.compte .container .form .input .show-pass {
+	position: absolute;
+	left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: #777;
+	cursor: pointer;
+}
+.compte .container .form .select{
+	width: fit-content;
+	font-weight: 600;
+	font-size: 18px;
+}
+.compte .container .form a {
+	color: var(--main-color);
+	font-weight: bold;
+}
+.compte .container .form input[type = "submit"] {
+	margin: 10px 0;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+	font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+}
